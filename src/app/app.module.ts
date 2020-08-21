@@ -35,7 +35,9 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    EquipoService   // agrego el servicio importado
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

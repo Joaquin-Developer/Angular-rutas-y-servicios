@@ -5,5 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class EquipoService {
 
-  constructor() { }
+  constructor() { 
+    // probamos el servicio
+    console.log("Si vemos este mensaje, significa que nuestro servicio fuciona!");
+  }
 }
