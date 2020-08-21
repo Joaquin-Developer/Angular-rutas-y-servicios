@@ -1,3 +1,4 @@
+import { RouterModule, Routes } from '@angular/router'; // importamos RouterModule y Router
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { Cuerpo2Component } from './cuerpo2/cuerpo2.component';
 import { ContactoComponent } from './contacto/contacto.component';
+
+const routes: Routes = [
+  { path: 'contacto', component: ContactoComponent }
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +25,8 @@ import { ContactoComponent } from './contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
