@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';  // lo importamos para poder leer una ruta
+import { EquipoService } from './../equipo.service';
 
 @Component({
   selector: 'app-equipo',
@@ -8,7 +9,15 @@ import { ActivatedRoute } from '@angular/router';  // lo importamos para poder l
 })
 export class EquipoComponent implements OnInit {
 
-  constructor() { }
+  equipo: any[] = [];
+
+  constructor(private ruta:ActivatedRoute, private _servicio: EquipoService) { 
+    this.ruta.params.subscribe(params =>{
+      console.log(params['id']);
+      // capturamos info de nuestro servicio, pero solo de un objeto en particular
+      this.equipo = this._servicio.obtenerEquipoPorId(params['id']);
+    });
+  }
 
   ngOnInit(): void {
   }

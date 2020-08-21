@@ -28,4 +28,8 @@ export class EquipoService {
     return this.equipo;
   }
 
+  obtenerEquipoPorId(index){
+    return this.equipo[index];
+  }
+
 }
