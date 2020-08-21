@@ -2,6 +2,9 @@ import { RouterModule, Routes } from '@angular/router'; // importamos RouterModu
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+/* Importo los servicios: */ 
+import { EquipoService } from './equipo.service';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
