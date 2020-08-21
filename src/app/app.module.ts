@@ -16,6 +16,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
+  { path: 'equipo/:id', component: EquipoComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: '', component: InicioComponent , pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' } // cualquier ruta desconocida sera redirigida a inicio
