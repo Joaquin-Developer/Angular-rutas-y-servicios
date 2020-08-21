@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
     FooterComponent,
     ContactoComponent,
     InicioComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,

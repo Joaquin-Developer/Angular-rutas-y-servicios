@@ -3,4 +3,15 @@
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis eligendi fugit facilis in debitis? Ipsa, ea vero eligendi accusamus quos velit ad cum eius libero laboriosam molestiae, deserunt itaque?
     </p>
+    <!-- Vamos a llenar el ul con los elementos del array equipo, necesitamos solo un li el cual
+    replicaremos con un ngFor -->
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of equipo">
+            <h6>Nombre: {{item.nombre}} </h6>
+            <h6>Especialidad: {{item.especialidad}} </h6>
+            <a href="#">Leer mas...</a>
+
+        </li>
+      </ul>
+
 </div>
